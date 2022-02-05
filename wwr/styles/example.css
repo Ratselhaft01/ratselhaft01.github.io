@@ -1,7 +1,29 @@
 body {
-    background-color:purple;
+    background-color: blueviolet;
 }
-h1 {
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+.frogcolor{
+    background-color: green;
+}
+.jumping{
+    background-color: yellow;
+    grid-row: 2/4;
+    grid-column: 2;
+}
+.eating{
+    background-color: brown;
+    grid-row: 1;
+    grid-column: 2/4;
+}
+.jumping div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*h6 {
     background-color:chartreuse;
 }
 p {
@@ -25,4 +47,4 @@ p {
 #id {
     font-family:'Neonderthaw', cursive;
     font-size:4em;
-}
+}*/
