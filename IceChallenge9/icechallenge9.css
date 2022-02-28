@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+}
+#weeks{
+    color: rgb(5, 95, 122);
+    text-align: center;
+    margin: 0;
+}
+#PT{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+#text{
+    width: 150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+#middle{
+    background-color: white;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    align-items: center;
+}
+#divimage{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#image{
+    border-width: 1px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #3f5b8b;
+    width: 300px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 10px solid white;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.smaller{
+    font-size: .5em;
+    
+}
+
+.one{
+    grid-column: 1;
+    
+    text-align: center;
+}
+
+.two{
+    grid-column: 2;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    text-align: center;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    margin-top: 5px;
+
+   
+}
+.three{
+    grid-column: 3;
+    text-align: center;
+}
+
+.views{
+    margin-top: -20px;
+}
