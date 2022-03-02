@@ -261,7 +261,7 @@ main section img{
   color: #fff;
 }
 .content .list label:hover{
-  color: #6d50e2;
+  color: #100dc2;
 }
 .content .slider{
   position: absolute;
@@ -270,7 +270,7 @@ main section img{
   height: 60px;
   width: 100%;
   border-radius: 12px;
-  background: #6d50e2;
+  background: #100dc2;
   transition: all 0.4s ease;
 }
 #home:checked ~ .list .slider{
