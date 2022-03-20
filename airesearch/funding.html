@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Page</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
@@ -13,8 +14,8 @@
         </a>
         <nav>
             <a href='index.html'>Home</a>
-            <a href='#'>The Research</a>
-            <a href='#'>Funding</a>
+            <a href='research.html'>The Research</a>
+            <a href='funding.html'>Funding</a>
         </nav>
         <div id='hero'>
             <div id='hero-box'>
@@ -44,27 +45,39 @@
                 that we recieve, we are able to get better equipment and spend more
                 of our time on these projects.</p>
         </section>
-        <div id="fund">
-            <h1>Please donate to us to help us continue our research!</h1>
-            <form>
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name"/>
-                    </li>
-                    <li>
-                        <label for="name">E-mail:</label>
-                        <input type="email" id="mail" name="user_email"/>
-                    </li>
-                    <li>
-                        <label for="msg">Donation:</label>
-                        <textarea id="donation" name="user_donation">
-                        </textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Donate</button>
-                    </li>
-                </ul>
+        <button onclick="document.getElementById('id01').style.display='block'">Donate</button>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="close" title="Close Modal">&times;</span>
+
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <img src="styles/images/ailogo.jfif" alt="Avatar" class="avatar">
+                </div>
+                <div class="container">
+                    <label for="uname"><b>Name:</b></label>
+                    <input type="text" placeholder="Enter Name" name="uname" required>
+            
+                    <label for="psw"><b>E-mail:</b></label>
+                    <input type="text" placeholder="Enter E-mail" name="psw" required>
+            
+                    <button type="submit">Donate</button>
+                    <label>
+                </div>
+                <div class="container" style="background-color:#f1f1f1;">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                        }
+                    }
+                </script>
             </form>
         </div>
         <script>
