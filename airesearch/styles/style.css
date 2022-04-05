@@ -96,6 +96,9 @@ main section{
 .name{
     grid-column: 1/3;
 }
+.insta{
+    width: 65px;
+}
 
 
 #background{
@@ -278,3 +281,47 @@ span.psw{
     from {transform: scale(0)}
     to {transform: scale(1)}
   }
+
+
+
+  /* Popup container - can be anything you want */
+.popup {
+    position: absolute;
+    display: inline-block;
+}
+  
+ /* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    align-self: center;
+}
+  
+  /* Popup arrow */
+
+  
+  /* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+  
+  /* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
