@@ -41,6 +41,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 }
 #hero{ 
     display: grid;
@@ -65,9 +66,6 @@ footer{
 main section{
     text-align: center;
     margin: 0 10%;
-}
-#background{
-    height: 725px;
 }
 
 .lock-pic{
@@ -99,12 +97,16 @@ main section{
 .insta{
     width: 65px;
 }
+.explanation{
+    padding-top: 100px;
+}
 
 
 #background{
     background-color: #09792a;
     grid-column: 1/11;
     grid-row: 4/9;
+    height: 725px;
 }
 .msg{
     background-color: #065e20;
